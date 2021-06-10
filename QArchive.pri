@@ -1,6 +1,6 @@
-INCLUDEPATH += $$PWD $$PWD/include $$PWD/other/qmake
+INCLUDEPATH += $$PWD $$PWD/include $$PWD/libarchive
 QT += core
-LIBS += -larchive
+LIBS += -L$$PWD/libarchive/ -larchive
 SOURCES += $$PWD/src/qarchivediskextractor_p.cc \
 	   $$PWD/src/qarchivediskextractor.cc \
 	   $$PWD/src/qarchivediskcompressor_p.cc \
@@ -16,5 +16,4 @@ HEADERS += $$PWD/include/qarchivediskextractor_p.hpp \
 	   $$PWD/include/qarchive_enums.hpp \
            $$PWD/include/qarchivediskextractor.hpp \
            $$PWD/include/qarchivediskcompressor.hpp \
-           $$PWD/include/qarchive_global.hpp \
-           $$PWD/other/qmake/config.h
+	   $$PWD/include/qarchive_global.hpp
