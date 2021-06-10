@@ -7,11 +7,9 @@
 #include <QThread>
 #include <QJsonObject>
 
-#include "qarchive_global.hpp"
-
 namespace QArchive {
 class DiskExtractorPrivate;
-class QARCHIVE_EXPORT DiskExtractor : public QObject {
+class DiskExtractor : public QObject {
     Q_OBJECT
   public:
     DiskExtractor(QObject *parent = nullptr, bool singleThreaded = true);

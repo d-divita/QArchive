@@ -6,12 +6,10 @@
 #include <QScopedPointer>
 #include <QThread>
 
-#include "qarchive_global.hpp"
-
 namespace QArchive {
 
 class DiskCompressorPrivate;
-class QARCHIVE_EXPORT DiskCompressor : public QObject {
+class DiskCompressor : public QObject {
     Q_OBJECT
   public:
     DiskCompressor(QObject *parent = nullptr, bool singleThreaded = true);
